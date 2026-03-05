@@ -1,0 +1,121 @@
+Wir arbeiten für das unternehmen LBS
+
+Handbucheintrag – AT 8.2 Wesentlichkeitsanalyse (Organisation)
+Hinweis: Der nachfolgende Text ist eine überarbeitete, anonymisierte Fassung des ursprünglichen Handbucheintrags. Er berücksichtigt die Inhalte der vorhandenen Formulare, der Prozessbeschreibung und der Negativliste und ist für Simulations  und Prototyp Zwecke geeignet.
+________________________________________
+1. Zweck
+Die Wesentlichkeitsanalyse nach MaRisk AT 8.2 stellt sicher, dass geplante Änderungen in der Aufbau  und Ablauforganisation sowie an IT Systemen vor ihrer Umsetzung systematisch bewertet, dokumentiert und freigegeben werden. Ziel ist, Auswirkungen auf Risikolage, Kontrollverfahren, Kontrollintensität sowie auf Compliance  und Informationssicherheitsanforderungen frühzeitig zu erkennen und angemessen zu steuern.
+________________________________________
+2. Geltungsbereich
+Die Regelung gilt für alle Organisationseinheiten der Organisation und ist anzuwenden, sobald Änderungen mindestens einen der nachfolgenden Bereiche betreffen:
+Bereich	Beispiele
+Geschäfts  und Unterstützungsprozesse (inkl. Rollen, Verantwortlichkeiten, Schnittstellen)	Neugestaltung von Kredit  oder Zahlungsprozessen
+Internes Kontrollsystem (IKS)	Einführung, Wegfall oder Anpassung von Kontrollen, Vier Augen Prinzipien
+IT Anwendungen, -Infrastruktur, Schnittstellen, Datenflüsse, Berechtigungen	Migration von Kernsystemen, neue Schnittstellen, Änderungen an Berechtigungskonzepten
+Auslagerungen / Dienstleistersteuerung	Änderungen bei kritischen Lieferanten, Outsourcing Entscheidungen
+Regelwerke, Dokumentations  und Meldepflichten	Anpassungen an regulatorische Vorgaben (z. B. DSGVO, Geldwäschegesetz)
+________________________________________
+3. Begriffe
+Begriff	Definition
+Change	Geplante oder durchzuführende Anpassung in Organisation, Prozessen oder IT, die potenziell Risiko , Kontroll  oder Compliance Auswirkungen hat.
+Wesentliche Änderung	Änderung mit erheblichem Einfluss auf wesentliche Prozesse, Risiken, Kontrollen, Daten/Schutzbedarf, Verfügbarkeit oder regulatorische Anforderungen.
+Negativkatalog	Auflistung von Änderungen, die per Definition nicht wesentlich sind (siehe Anhang A).
+Auswirkungsanalyse	Dokumentierte Analyse der durch die Änderung ausgelösten Risiken und der daraus resultierenden Kontroll  und Auflagen Anpassungen.
+________________________________________
+4. Rollen und Verantwortlichkeiten (generisch)
+Rolle	Hauptaufgabe
+Änderungsinitiator / Fachbereich	Erstellt den Change Steckbrief (Ziel, Scope, erwartete Auswirkungen).
+Change Owner / Prozessverantwortliche*r	Führt Vorprüfung und Wesentlichkeitsanalyse durch, koordiniert Beteiligte, leitet Ergebnisse weiter.
+IT Owner / Applikationsverantwortliche*r	Bewertet technische Auswirkungen (Schnittstellen, Verfügbarkeit, Berechtigungen) und liefert Test /Rollout Informationen.
+Risikocontrolling	Prüft Risikoauswirkungen (opRisk, IT Risiken, Sicherheits  und Compliance Risiken), plausibilisiert Einstufung.
+Compliance	Prüft regulatorische Implikationen, Dokumentations  und Nachweispflichten.
+Informationssicherheit / Datenschutz	Bewertet Schutzbedarf, Sicherheits  und Datenschutzfolgen, Logging/Audit Trail.
+Interne Revision	Bei besonders hohen Auswirkungen oder auf Anforderung, unabhängige Prüfung.
+Freigabeinstanz (z. B. Leitung, Change Advisory Board)	Trifft finale Entscheidung über Wesentlichkeit und definiert ggf. Auflagen.
+Team Organisation	Verantwortlich für Teil 2 der Wesentlichkeitsanalyse (Bewertung/Neubewertung).
+________________________________________
+5. Auslöser (Trigger)
+Eine Wesentlichkeitsanalyse ist durchzuführen, sobald ein Change mindestens eines der folgenden Merkmale aufweist:
+•	Änderung an einem wesentlichen Prozess oder Kernprozess (z. B. Kunden /Bestands , Zahlungs  oder Berichtswesen Prozesse).
+•	Einführung/Abschaltung von IT Anwendungen oder Schnittstellen mit Prozesswirkung.
+•	Anpassung von IKS Kontrollen (neu, wegfallend, Frequenz  oder Intensitätsänderung, Automatisierung).
+•	Änderungen von Rollen, Verantwortlichkeiten, Berechtigungen oder Genehmigungswegen.
+•	Auswirkungen auf Verfügbarkeit, Integrität, Vertraulichkeit oder Nachvollziehbarkeit (Logging, Archivierung).
+•	Relevanz für Auslagerungs /Dienstleistersteuerung oder kritische Lieferanten.
+________________________________________
+6. Prozessbeschreibung
+6.1 Erfassung des Changes (Change Steckbrief)
+Der Initiator erstellt ein Dokument mit mindestens folgenden Angaben:
+•	Ziel / Anlass der Änderung
+•	Umfang / Scope (betroffene Prozesse, Produkte, Anwendungen, Organisationseinheiten)
+•	Betroffene Daten / Schutzbedarf (falls bekannt)
+•	Betroffene Kontrollen / IKS Elemente (Ist /Soll Zustand)
+•	Zeitplan (Test, Rollout, Go Live)
+•	Stakeholder (Beteiligte Funktionen)
+6.2 Vorprüfung (Teil 1) – „Vorprüfung der Wesentlichkeit“
+Durchgeführt vom Change Owner / Prozessverantwortlichen.
+Kriterien:
+Kriterium	Bewertung
+Umfang & Kritikalität der betroffenen Prozesse/Anwendungen	hoch / mittel / gering
+Veränderung von Kontrollen oder Kontrollintensität	ja / nein
+Potenzieller Risikoanstieg (opRisk, IT Risiko, Sicherheits Risiko)	hoch / mittel / gering
+Regulatorischer Einfluss	ja / nein
+Ergebnis: „Detailanalyse erforderlich“ oder „Vereinfachte Bewertung ausreichend“ (letzteres nur bei klarer Nicht Wesentlichkeit, inkl. Begründung).
+Hinweis: Teil 1 wird vom initiierenden Fachbereich ausgefüllt und per E Mail an die Team Leitung Organisation gesendet (vgl. Formular „Wesentlichkeitsanalyse – Teil 1“).
+6.3 Durchführung der Wesentlichkeitsanalyse (Teil 2) – „Bewertung der Wesentlichkeit“
+Durchgeführt vom Team Organisation.
+1.	Kriterien Bewertung (Skala 1–4) für die Dimensionen:
+o	Prozess /Organisationswirkung
+o	IKS /Kontrollwirkung
+o	Risikowirkung (opRisk, Fraud Risiko, etc.)
+o	IT /Betriebswirkung (Verfügbarkeit, Performance, Single Point of Failure)
+o	Daten /Schutzbedarf (Vertraulichkeit, Integrität, Logging)
+o	Compliance / Regulatorik
+2.	Gesamteinstufung:
+o	Wesentlich, wenn mindestens ein Kriterium den höchsten Grad erreicht oder die Kombination mehrerer mittlerer Auswirkungen zu einer wesentlichen Veränderung führt.
+o	Nicht wesentlich, wenn alle Kriterien niedrig bewertet sind und die Änderung im Negativkatalog (Anhang A) aufgeführt ist.
+3.	Dokumentation: Ergebnis, Begründung und ggf. Hinweis auf bereits durchgeführte Analyse (z. B. frühere Nicht Wesentlichkeit) werden im Formular „Wesentlichkeitsanalyse – Teil 2“ festgehalten.
+6.4 Reviews und Abstimmung
+Funktion	Review Inhalt
+IT Owner	Technische Bewertung, Test /Rollout Plan
+Risikocontrolling	Risiko Plausibilisierung, ggf. Maßnahmenvorschläge
+Compliance	Regulatorische Implikationen, Dokumentationspflicht
+Informationssicherheit / Datenschutz	Schutz  und Sicherheitsaspekte, Berechtigungskonzepte
+Interne Revision	Bei hohen Auswirkungen oder auf Anforderung
+Die Rückmeldungen werden in der Regel innerhalb einer Woche an die Team Leitung Organisation übermittelt.
+6.5 Freigabe und Auflagen
+Ergebnis	Vorgehen
+Nicht wesentliche Änderung	Freigabe im Standard Change Verfahren, Dokumentation/Ablage verpflichtend.
+Wesentliche Änderung	Umsetzung nur nach Erfüllung definierter Auflagen (z. B. zusätzliche Tests, Gate Freigaben, Schulungen, Berechtigungs Rezertifizierung, Monitoring). Entscheidung erfolgt durch die Freigabeinstanz (Leitung, CAB etc.).
+Zurückgestellt / Abgelehnt	Rücksprache mit Initiator, ggf. Re Design oder zusätzliche Risikominderungsmaßnahmen.
+6.6 Umsetzung, Nachweis, Abschluss
+1.	Umsetzung: Auflagen werden vor dem produktiven Rollout umgesetzt.
+2.	Nachweise: Test Protokolle, Abnahmen, aktualisierte Prozess /IKS Dokumente, Berechtigungskonzepte werden gesammelt.
+3.	Abschluss: Vermerk mit Go Live Datum, Rest Punkten und Verweis auf die revisionssichere Ablage im zentralen Repository.
+6.7 Dokumentationsanforderungen
+Dokument	Aufbewahrung
+Change Steckbrief (Version, Datum, Initiator, Scope)	gemäß interner DMS Richtlinie
+Wesentlichkeitsanalyse inkl. Kriterien Bewertung & Begründung	revisionssicher, mindestens 10 Jahre
+Review Nachweise (Mails, Protokolle)	5 Jahre
+Freigabeentscheidung (Datum, Entscheider)	10 Jahre
+Maßnahmenplan / Auflagen & Nachweise (bei wesentlichen Änderungen)	10 Jahre
+________________________________________
+7. Negativkatalog – Nicht wesentliche Veränderungen (Anhang A)
+Bereich	Beispiele für nicht wesentliche Änderungen
+Aufbauorganisation	Umbenennung von Abteilungen/Funktionen, Vergabe bestehender Rollen/Rechte, keine Auswirkung auf Funktionstrennung
+Ablauforganisation	Redaktionelle Änderungen (Klarstellungen, Ergänzungen), grafische Anpassungen, Änderungen an Arbeitsmitteln
+IT Systeme	Software Updates, Patches, Hotfixes, Firewall Regelanpassungen, Standard Changes ohne Prozessauswirkung, Netzwerk /Server Konfiguration zur Sicherstellung des Betriebs, Umzüge von Arbeitsplätzen (nicht Rechenzentrum), Daten Konvertierung, Import/Export, Schnittstellen Anpassungen im DWH, Automations Workflows, Berechtigungskonzepte ohne Prozessauswirkung, Rechtschreibfehler in Formularen, WSUS Updates, AD Gruppen Änderungen, IDV zu Standard Applikations Migrationen
+Hinweis: Bei allen anderen Sachverhalten oder bei Unsicherheit ist eine Wesentlichkeitsanalyse zwingend durchzuführen.
+________________________________________
+8. Wiederholungs  bzw. Nachanalyse
+Wurde bereits eine Wesentlichkeitsanalyse durchgeführt und das Ergebnis „nicht wesentlich“ war, so ist bei einer inhaltlichen Änderung des Vorhabens eine erneute Prüfung durch das Team Organisation (Teil 3) erforderlich.
+________________________________________
+9. Anhang B – Checkliste „Mindestfragen“
+1.	Welche Prozesse/Produkte sind betroffen und wie kritisch sind sie?
+2.	Welche Kontrollen ändern sich (neu/wegfallend/Intensität)?
+3.	Welche Risiken steigen potenziell (opRisk/IT/Security/Compliance)?
+4.	Welche Daten sind betroffen (Schutzbedarf, Berechtigungen, Logging)?
+5.	Welche Auswirkungen bestehen auf Verfügbarkeit/Betrieb/Monitoring?
+6.	Welche Stellen müssen reviewen und wer gibt final frei?
+7.	Welche Auflagen sind erforderlich und wie wird deren Umsetzung nachgewiesen?
+
