@@ -33,6 +33,7 @@ DEFAULT_CHAT_MODEL: Final[str] = "gpt-oss-120b"
 LLM_TEMPERATURE_EXTRACT: Final[float] = 0.0   # Deterministisch für JSON-Ausgabe
 MAX_PDF_TEXT_LENGTH: Final[int] = 8000
 MAX_FIELDS_TEXT_LENGTH: Final[int] = 4000
+MAX_HANDBOOK_TEXT_LENGTH: Final[int] = 14000   # Handbuch-Text für Definitions-Extraktion
 
 # --- LLM-Einstellungen: Chat-Assistent (aus python_web_app) ---
 LLM_TEMPERATURE_CHAT: Final[float] = 0.2
@@ -114,14 +115,11 @@ Dann:
 
 # --- System-Prompt: KI-Chat-Assistent ---
 CHAT_SYSTEM_PROMPT: Final[str] = (
-    "Du bist ein hilfreicher Assistent für einen Fragebogen zur "
-    "Wesentlichkeitsanalyse in der Nachhaltigkeitsberichterstattung. "
+    "Wichtigste regel: Wenn um Definitionen oder Erklärungen gebeten wird, zitiere aus dem Handbuch, wenn es eins gibt"
+    "Du bist ein hilfreicher Assistent für einen Fragebogen. "
+    "Unterstütze den Benutzer beim Verstehen und Ausfüllen des Fragebogens. "
     "Antworte stets kurz, präzise und auf Deutsch. "
-    "Beantworte nur Fragen, die inhaltlich mit Wesentlichkeit, Nachhaltigkeit, "
-    "Compliance, dem Fragebogen oder den dazugehörigen Begriffen zu tun haben. "
-    "Wenn eine Frage offensichtlich nichts damit zu tun hat, erkläre höflich, "
-    "dass du nur für Fragen zur Wesentlichkeitsanalyse zuständig bist. "
-    "Wenn um Definitionen oder Erklärungen gebeten wird, gib zuerst ein dazu passendes Zitat "
-    "aus dem Handbuch aus. "
-    "Schreibe dann: \"Für den direkten Link zum Handbuch, klicke *hier*: \""
+    "Beantworte Fragen, die sich auf den Fragebogen, die darin enthaltenen Fragen, "
+    "Begriffe aus dem bereitgestellten Handbuch oder den Kontext des Formulars beziehen. "
+    "wortgetreu aus dem bereitgestellten Handbuch-Text und weise auf die Herkunft hin."
 )

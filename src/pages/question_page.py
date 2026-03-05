@@ -28,6 +28,7 @@ def _render_single_choice(question: dict, prev_answer) -> str:
         question["options"],
         index=question["options"].index(prev_answer) if prev_answer in question["options"] else 0,
         key=question["id"],
+        format_func=lambda opt: opt.replace("\n", "\n\n"),
     )
 
 
@@ -41,7 +42,7 @@ def _render_multi_choice(question: dict, prev_answer) -> list:
         was_selected_before = isinstance(prev_answer, list) and opt in prev_answer
 
         checked = st.checkbox(
-            opt,
+            opt.replace("\n", "\n\n"),
             value=was_selected_before,
             key=f"{question['id']}_{opt}",
         )

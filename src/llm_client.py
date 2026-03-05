@@ -104,6 +104,22 @@ def build_messages_for_api(
             "content": f"Zusätzlicher Hintergrundkontext:\n{hidden_context}",
         })
 
+    # Handbuch-Text aus Session State (hochgeladen vom Nutzer)
+    # Wird auf MAX_HANDBOOK_TEXT_LENGTH gekürzt, um den Kontext nicht zu überlasten
+    handbook_text: str = st.session_state.get("handbook_text", "")
+    if handbook_text.strip():
+        from .config import MAX_HANDBOOK_TEXT_LENGTH
+        truncated = handbook_text[:MAX_HANDBOOK_TEXT_LENGTH]
+        messages.append({
+            "role": "system",
+            "content": (
+                "Handbuch-Text (Quelle für Zitate und Definitionen):\n"
+                "Wenn du nach Definitionen oder Erklärungen gefragt wirst, "
+                "zitiere wortgetreu aus diesem Text und weise auf die Herkunft hin.\n"
+                f"---\n{truncated}\n---"
+            ),
+        })
+
     if project_context.strip():
         messages.append({
             "role": "system",
